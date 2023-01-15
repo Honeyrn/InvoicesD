@@ -131,9 +131,9 @@ input:hover{background-color: #2e38c7}
 
 
 .table4{
-    width:700px;
+    width:1300px;
     /* border: 1px solid; */
-    table-layout: fixed;
+    /* table-layout: fixed; */
     border-bottom: 5px solid #F6F6FE;
     
 }
