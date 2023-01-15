@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script> 
+    <link rel="stylesheet" href="style.css"> 
     <title>Table</title>
 </head>
 
 <body>
-
+  
     
     <div class="upper-box">
         <h2>All Invoices</h2>
@@ -29,7 +28,7 @@
                 <thead>
                     <tr>
                         <div class="date1">
-                            <th><input type="date" id="date1" name="date1" align="left"></input></th>
+                            <th><input onClick="changeColor()" type="date" id="date1" name="date1" align="left"></input></th>
                         </div>
                         <!-- <th><button onClick="changeColor()" id="B" class="button Begin-Date"> Begin-Date </button></th>
                         <th><button onClick="changeColor()" id="E" class="button End-Date"> End-Date </button></th>
@@ -67,15 +66,14 @@
         <table class="table3"> 
             <thead>
                 <tr>
-                        <th><button onClick="changeColor()" id="B" class="nbutton Begin-Date" > Invoice </button></th>
-                    </button></th>
-                    <th><button onClick="changeColor()" id="E" class="nbutton End-Date"> Client-Name</button></th>
-                    <th><button onClick="changeColor()" id="E" class="nbutton End-Date"> Client-Type</button></th>
-                    <th><button onClick="changeColor()" id="S" class="nbutton Status"> Date </button></th> 
-                    <th><button onClick="changeColor()" id="C" class="nbutton Client"> Due-Date </button></th>
-                    <th><button onClick="changeColor()" id="C" class="nbutton Client"> Total </button></th>
-                    <th><button onClick="changeColor()" id="C" class="nbutton Client"> Balance </button></th>
-                    <th><button onClick="changeColor()" id="C" class="nbutton Client"> Status </button></th>
+                    <th><button onClick="changeColor()" id="B" class="nbutton" > Invoice </button></th>
+                    <th><button onClick="changeColor()" id="E" class="nbutton"> Client-Name</button></th>
+                    <th><button onClick="changeColor()" id="E" class="nbutton"> Client-Type</button></th>
+                    <th><button onClick="changeColor()" id="S" class="nbutton"> Date </button></th> 
+                    <th><button onClick="changeColor()" id="C" class="nbutton"> Due-Date </button></th>
+                    <th><button onClick="changeColor()" id="C" class="nbutton"> Total </button></th>
+                    <th><button onClick="changeColor()" id="C" class="nbutton "> Balance </button></th>
+                    <th><button onClick="changeColor()" id="C" class="nbutton"> Status </button></th>
                 </tr>
             </thead>
         </table>
@@ -83,161 +81,14 @@
     <div class="lower-box">
         <table class="table4">
         <!-- <table border="1" class="table4" rules=rows> -->
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Thomas Lynial</td>
-                <td>In-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="draft" class="dataButton Draft"> Draft </button></th>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Thomas Lynial</td>
-                <td>Out-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="partialPayment" class="dataButton2 Partial-Payment"> Partial Payment </button></th>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Thomas Lynial</td>
-                <td>In-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="Paid" class="dataButton3 Paid"> Paid </button></th>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td>Thomas Lynial</td>
-                <td>Out-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="draft" class="dataButton Draft"> Draft </button></th>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>Thomas Lynial</td>
-                <td>Out-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="draft" class="dataButton Draft"> Draft </button></th>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>Thomas Lynial</td>
-                <td>In-Statue</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="Paid" class="dataButton3 Paid"> Paid </button></th>
-              </tr>
-              <tr>
-                <td>7</td>
-                <td>Thomas Lynial</td>
-                <td>Out-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="partialPayment" class="dataButton2 Partial-Payment"> Partial Payment </button></th>
-              </tr>
-              <tr>
-                <td>8</td>
-                <td>Thomas Lynial</td>
-                <td>Out-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="draft" class="dataButton Draft"> Draft </button></th>
-              </tr>
-              <tr>
-                <td>9</td>
-                <td>Thomas Lynial</td>
-                <td>In-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="partialPayment" class="dataButton2 Partial-Payment"> Partial Payment </button></th>
-              </tr>
-              <tr>
-                <td>10</td>
-                <td>Thomas Lynial</td>
-                <td>Out-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="draft" class="dataButton Draft"> Draft </button></th>
-              </tr>
-              <tr>
-                <td>11</td>
-                <td>Thomas Lynial</td>
-                <td>Out-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="draft" class="dataButton Draft"> Draft </button></th>
-              </tr>
-              <tr>
-                <td>12</td>
-                <td>Thomas Lynial</td>
-                <td>In-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="partialPayment" class="dataButton2 Partial-Payment"> Partial Payment </button></th>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td>Thomas Lynial</td>
-                <td>In-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="Paid" class="dataButton3 Paid"> Paid </button></th>
-              </tr>
-              <tr>
-                <td>14</td>
-                <td>Thomas Lynial</td>
-                <td>Out-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="draft" class="dataButton Draft"> Draft </button></th>
-              </tr>
-              <tr>
-                <td>15</td>
-                <td>Thomas Lynial</td>
-                <td>In-State</td>
-                <td>5/11/2019</td>
-                <td>12/11/2019</td>
-                <td>678.00</td>
-                <td>678.00</td>
-                <th><button onClick="changeColor()" id="partialPayment" class="dataButton2 Partial-Payment"> Partial Payment </button></th>
+          <thead>
+          </thead>
+            <tbody id="table-container">
+                <!-- Table Data From JSON Array of Objects   -->
 
-              </tr>
             </tbody>
           </table>
-
+          
         <!-- <thead>
             <th>1</th>
             <th>2</th>
@@ -247,6 +98,8 @@
         </tbody> -->
 
     </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
+
+
